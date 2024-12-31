@@ -3,9 +3,8 @@
 import * as React from "react"
 import { useState, useEffect } from "react"
 
-export default function Gallery() {
-    const [galleryImages, setGalleryImages] = useState([]);
-
+export default function Gallery({ setSelectedImage }) {
+  const [galleryImages, setGalleryImages] = useState([]);
 
     useEffect(() => {
       async function fetchImages() {
@@ -31,7 +30,8 @@ export default function Gallery() {
               <img 
                 src={galleryImage.url} 
                 alt={galleryImage.alt} 
-                className="w-full h-48 object-cover rounded-lg" 
+                className="w-full h-48 object-cover rounded-lg"
+                onClick={() => setSelectedImage({ src: galleryImage.url, alt: galleryImage.alt })}
               />
             </div>
           ))}
