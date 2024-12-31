@@ -48,7 +48,7 @@ export default function Home() {
             </div>
             <Link href="https://docs.google.com/forms/d/e/1FAIpQLSerHK_2W2n8f9L7HWaPsTDW0_7BWsO6aexofxalmTR2G_5GkQ/viewform">
               <button className="px-6 py-3 bg-gradient-to-r from-[#40E0D0] to-[#9370DB] text-white font-semibold rounded-lg hover:opacity-90 transition-opacity">
-                Register Now
+                Apply to be a Speaker
               </button>
             </Link>
           </div>
@@ -120,7 +120,7 @@ export default function Home() {
             </p>
             <Link href="https://docs.google.com/forms/d/e/1FAIpQLSerHK_2W2n8f9L7HWaPsTDW0_7BWsO6aexofxalmTR2G_5GkQ/viewform">
               <button className="px-6 py-3 bg-gradient-to-r from-[#40E0D0] to-[#9370DB] text-white font-semibold rounded-lg hover:opacity-90 transition-opacity">
-                Register Now
+                Apply to be a Speaker
               </button>
             </Link>
           </div>
