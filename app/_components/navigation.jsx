@@ -1,12 +1,26 @@
 'use client'
 
-import { useCallback, useState } from 'react'
+import { useCallback, useState, useEffect, useRef } from 'react'
 import { Button } from "@/components/ui/button"
 import { Menu } from 'lucide-react'
 
 export function Navigation() {
   const navItems = ['about', 'tickets', 'speakers', 'sponsors', 'gallery']
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const menuRef = useRef(null);
+
+  const handleClickOutside = (event) => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      setIsMenuOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   const scrollToSection = useCallback((e, targetId) => {
     e.preventDefault()
@@ -24,6 +38,7 @@ export function Navigation() {
   }, [])
 
   return (
+    <div ref={menuRef}>
     <nav className="relative">
       <Button
         variant="ghost"
@@ -50,5 +65,6 @@ export function Navigation() {
         ))}
       </ul>
     </nav>
+    </div>
   )
 }
