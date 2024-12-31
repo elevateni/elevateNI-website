@@ -6,11 +6,9 @@ import Gallery from "./_components/gallery";
 import Link from "next/link";
 import { Navigation } from "./_components/navigation";
 import { SpeakersCarousel } from "./_components/speakers";
-import ErrorBoundary from '../components/ErrorBoundary';
 
 export default function Home() {
   return (
-    <ErrorBoundary>
     <div className="min-h-screen flex flex-col bg-black text-white">
       <header className="py-4 backdrop-blur-lg bg-black/50 sticky top-0 z-50">
         <div className="container mx-auto px-4 flex justify-between items-center">
@@ -128,35 +126,12 @@ export default function Home() {
       </main>
       <footer className="py-12 border-t border-white/10">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <h3 className="text-lg font-semibold mb-4 bg-gradient-to-r from-[#40E0D0] to-[#9370DB] text-transparent bg-clip-text">
                 Contact Us
               </h3>
               <p className="text-gray-300">Email: elevateni@qub.ac.uk</p>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-4 bg-gradient-to-r from-[#40E0D0] to-[#9370DB] text-transparent bg-clip-text">
-                Quick Links
-              </h3>
-              <ul className="space-y-2">
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-300 hover:text-[#40E0D0] transition-colors"
-                  >
-                    Schedule
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-300 hover:text-[#40E0D0] transition-colors"
-                  >
-                    FAQs
-                  </a>
-                </li>
-              </ul>
             </div>
             <div>
               <h3 className="text-lg font-semibold mb-4 bg-gradient-to-r from-[#40E0D0] to-[#9370DB] text-transparent bg-clip-text">
@@ -202,6 +177,5 @@ export default function Home() {
         </div>
       </footer>
     </div>
-    </ErrorBoundary>
   );
 }
