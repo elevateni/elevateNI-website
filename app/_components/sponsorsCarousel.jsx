@@ -55,7 +55,6 @@ export function SponsorsCarousel() {
                         alt={`${sponsor.name} logo`}
                         fill
                         style={{ objectFit: "contain" }}
-                        loading="lazy"
                       />
                     </div>
                     <div className="p-6">
