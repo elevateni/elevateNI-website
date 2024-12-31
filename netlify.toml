@@ -2,5 +2,5 @@
   package = "@netlify/plugin-nextjs"
 
 [build]
-  base = "./
+  base = "./"
   publish = "./.next"
