@@ -133,7 +133,7 @@ export default function Home() {
               <h3 className="text-lg font-semibold mb-4 bg-gradient-to-r from-[#40E0D0] to-[#9370DB] text-transparent bg-clip-text">
                 Contact Us
               </h3>
-              <p className="text-gray-300">Email: elevatniconf@qub.ac.uk</p>
+              <p className="text-gray-300">Email: elevateni@qub.ac.uk</p>
             </div>
             <div>
               <h3 className="text-lg font-semibold mb-4 bg-gradient-to-r from-[#40E0D0] to-[#9370DB] text-transparent bg-clip-text">
