@@ -32,10 +32,11 @@ export default function Gallery({ setSelectedImage }) {
                 alt={galleryImage.alt} 
                 className="w-full h-48 object-cover rounded-lg"
                 onClick={() => setSelectedImage({ src: galleryImage.url, alt: galleryImage.alt })}
+                loading="lazy" 
               />
             </div>
           ))}
         </div>
       </div>
-    )
+    );
 }
