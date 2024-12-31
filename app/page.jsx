@@ -6,11 +6,9 @@ import Gallery from "./_components/gallery";
 import Link from "next/link";
 import { Navigation } from "./_components/navigation";
 import { SpeakersCarousel } from "./_components/speakers";
-import ErrorBoundary from '../components/ErrorBoundary';
 
 export default function Home() {
   return (
-    <ErrorBoundary>
     <div className="min-h-screen flex flex-col bg-black text-white">
       <header className="py-4 backdrop-blur-lg bg-black/50 sticky top-0 z-50">
         <div className="container mx-auto px-4 flex justify-between items-center">
@@ -179,6 +177,5 @@ export default function Home() {
         </div>
       </footer>
     </div>
-    </ErrorBoundary>
   );
 }
