@@ -143,7 +143,7 @@ export default function Home() {
           <SpeakersCarousel />
         </section>
 
-        <section className="py-24 relative bg-white/5">
+        <section id='panels' className="py-24 relative bg-white/5">
           <div className="container mx-auto px-4 max-w-5xl">
             <h2 className="text-3xl font-bold mb-12 text-center bg-gradient-to-r from-[#40E0D0] to-[#9370DB] text-transparent bg-clip-text">
               Panels
