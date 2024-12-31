@@ -6,8 +6,18 @@ import Gallery from "./_components/gallery";
 import Link from "next/link";
 import { Navigation } from "./_components/navigation";
 import { SpeakersCarousel } from "./_components/speakers";
+import Image from "next/image";
+import { Button } from "@/components/ui/button"
+import { useState } from "react"
+import { ImageModal } from './_components/imageModal'
 
 export default function Home() {
+  const [selectedImage, setSelectedImage] = useState(null)
+
+  const closeModal = () => {
+    setSelectedImage(null)
+  }
+
   return (
     <div className="min-h-screen flex flex-col bg-black text-white">
       <header className="py-4 backdrop-blur-lg bg-black/50 sticky top-0 z-50">
@@ -86,7 +96,44 @@ export default function Home() {
             <div className="flex flex-col items-center justify-center space-y-6">
               <Ticket className="w-24 h-24 text-[#9370DB]" />
               <p className="text-2xl font-semibold text-gray-300">
-                Coming Soon
+                Coming 6th January
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="charity" className="py-24 relative">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold mb-12 text-center bg-gradient-to-r from-[#40E0D0] to-[#9370DB] text-transparent bg-clip-text">
+            Proudly Supporting
+            </h2>
+            <div className="flex flex-col items-center">
+              <img 
+                src="/images/bhf_logo.png"
+                alt="The British Heart Foundation Logo"
+                className="w-60 h-30"
+              />
+              <p className="text-gray-300 text-center max-w-2xl">
+                We are proud to support The British Heart Foundation, an organisation dedicated to having a world free from the fear of heart and circulatory diseases. 
+                All proceeds raised from ElevateNI 2025 will help support their important work.
+              </p>
+              <Link href="https://www.bhf.org.uk/">
+              <Button className="mt-6 bg-gradient-to-r from-[#40E0D0] to-[#9370DB] text-white hover:opacity-90 transition-opacity">
+                Learn More
+              </Button>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        <section id="raffle" className="py-24 relative bg-white/5">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-3xl font-bold mb-12 bg-gradient-to-r from-[#40E0D0] to-[#9370DB] text-transparent bg-clip-text">
+             Charity Raffle
+            </h2>
+            <div className="flex flex-col items-center justify-center space-y-6">
+              <p className="text-2xl font-semibold text-gray-300">
+                We have some exciting prizes to announce soon!
               </p>
             </div>
           </div>
@@ -94,6 +141,32 @@ export default function Home() {
 
         <section id="speakers">
           <SpeakersCarousel />
+        </section>
+
+        <section className="py-24 relative bg-white/5">
+          <div className="container mx-auto px-4 max-w-5xl">
+            <h2 className="text-3xl font-bold mb-12 text-center bg-gradient-to-r from-[#40E0D0] to-[#9370DB] text-transparent bg-clip-text">
+              Panels
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
+              <div className="w-full h-96 relative">
+                <Image
+                  src={'/images/disability_panel.png'}
+                  alt={'Disability and Inclusion Panel'}
+                  fill
+                  style={{ objectFit: "contain" }}
+                />
+              </div>
+              <div className="w-full h-96 relative">
+                <Image
+                  src={'/images/diversity_panel.png'}
+                  alt={'Diversity and Inclusion Panel'}
+                  fill
+                  style={{ objectFit: "contain" }}
+                />
+              </div>
+            </div>
+          </div>
         </section>
 
         <section id="sponsors">
@@ -104,7 +177,7 @@ export default function Home() {
           id="gallery"
           className="h-96 md:h-96 lg:h-[500px] overflow-y-auto"
         >
-          <Gallery />
+          <Gallery setSelectedImage={setSelectedImage} />
         </section>
 
         <section id="register" className="py-24 relative bg-white/5">
@@ -176,6 +249,13 @@ export default function Home() {
           </div>
         </div>
       </footer>
+      {selectedImage && (
+        <ImageModal
+          src={selectedImage.src}
+          alt={selectedImage.alt}
+          onClose={closeModal}
+        />
+      )}
     </div>
   );
 }
