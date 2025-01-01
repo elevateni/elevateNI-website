@@ -153,7 +153,7 @@ export default function Home() {
         <section id='panels' className="py-24 relative bg-white/5">
           <div className="container mx-auto px-4 max-w-5xl">
             <h2 className="text-3xl font-bold mb-12 text-center bg-gradient-to-r from-[#40E0D0] to-[#9370DB] text-transparent bg-clip-text">
-              Panels
+              Previous Panels
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
               <div className="w-full h-96 relative">
