@@ -10,6 +10,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
 import { ImageModal } from './_components/imageModal'
+import { CountdownTimer } from "./_components/coundown";
 
 export default function Home() {
   const [selectedImage, setSelectedImage] = useState(null)
@@ -35,6 +36,12 @@ export default function Home() {
           <Navigation />
         </div>
       </header>
+
+      <div className="bg-gradient-to-r from-[#40E0D0]/20 to-[#9370DB]/20 py-4">
+        <div className="container mx-auto px-4">
+          <CountdownTimer />
+        </div>
+      </div>
 
       <main className="flex-grow">
         <section className="h-[60vh] flex items-center relative overflow-hidden">
