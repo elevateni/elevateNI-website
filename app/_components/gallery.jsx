@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import { useState, useEffect } from "react"
+import Image from "next/image";
 
 export default function Gallery({ setSelectedImage }) {
   const [galleryImages, setGalleryImages] = useState([]);
@@ -27,14 +28,17 @@ export default function Gallery({ setSelectedImage }) {
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8">
           {galleryImages.map((galleryImage) => (
             <div key={galleryImage.id} className="bg-black/50 backdrop-blur-lg rounded-lg overflow-hidden border border-white/10">
-              <img 
-                src={galleryImage.url} 
-                alt={galleryImage.alt} 
-                className="w-full h-48 object-cover rounded-lg"
-                onClick={() => setSelectedImage({ src: galleryImage.url, alt: galleryImage.alt })}
-                loading="lazy" 
-              />
-            </div>
+            <Image 
+              src={galleryImage.url} 
+              alt={galleryImage.alt} 
+              className="w-full h-48 object-cover rounded-lg"
+              onClick={() => setSelectedImage({ src: galleryImage.url, alt: galleryImage.alt })}
+              loading="lazy" 
+              priority={false} 
+              width={320} 
+              height={192} 
+            />
+          </div>
           ))}
         </div>
       </div>

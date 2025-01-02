@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { CalendarDays, MapPin, Users, Ticket } from "lucide-react";
 import { SponsorsCarousel } from "./_components/sponsorsCarousel";
@@ -7,17 +7,17 @@ import Link from "next/link";
 import { Navigation } from "./_components/navigation";
 import { SpeakersCarousel } from "./_components/speakers";
 import Image from "next/image";
-import { Button } from "@/components/ui/button"
-import { useState } from "react"
-import { ImageModal } from './_components/imageModal'
+import { Button } from "@/components/ui/button";
+import { useState } from "react";
+import { ImageModal } from "./_components/imageModal";
 import { CountdownTimer } from "./_components/coundown";
 
 export default function Home() {
-  const [selectedImage, setSelectedImage] = useState(null)
+  const [selectedImage, setSelectedImage] = useState(null);
 
   const closeModal = () => {
-    setSelectedImage(null)
-  }
+    setSelectedImage(null);
+  };
 
   return (
     <div className="min-h-screen flex flex-col bg-black text-white">
@@ -27,10 +27,13 @@ export default function Home() {
             <div className="w-8 h-8">
               <div className="w-full h-full relative"></div>
             </div>
-            <img
+            <Image
               src="/images/white_logo_2025.png"
               alt="ElevateNI 2025 Logo"
-              className="w-60 h-30"
+              width={240}
+              height={120}
+              priority
+              className="object-contain"
             />
           </div>
           <Navigation />
@@ -47,10 +50,16 @@ export default function Home() {
         <section className="h-[60vh] flex items-center relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-[#40E0D0]/20 to-[#9370DB]/20" />
           <div className="container mx-auto px-4 text-center relative z-10">
-            <img
-              src={"images/topImages/a-the-sun.jpg"}
-              className="w-full h-72 object-cover"
-            />
+            <div className="w-full h-72 relative">
+              <Image
+                src="/images/topImages/a-the-sun.jpg"
+                alt="Astrophysics presentation"
+                fill
+                className="object-cover"
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+            </div>
             <h2 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-[#40E0D0] to-[#9370DB] text-transparent bg-clip-text"></h2>
             <div className="mb-8">
               <div className="inline-flex items-center space-x-4 text-2xl md:text-3xl font-light">
@@ -112,22 +121,24 @@ export default function Home() {
         <section id="charity" className="py-24 relative">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold mb-12 text-center bg-gradient-to-r from-[#40E0D0] to-[#9370DB] text-transparent bg-clip-text">
-            Proudly Supporting
+              Proudly Supporting
             </h2>
             <div className="flex flex-col items-center">
-              <img 
+              <img
                 src="/images/bhf_logo.png"
                 alt="The British Heart Foundation Logo"
                 className="w-60 h-30"
               />
               <p className="text-gray-300 text-center max-w-2xl">
-                We are proud to support The British Heart Foundation, an organisation dedicated to having a world free from the fear of heart and circulatory diseases. 
-                All proceeds raised from ElevateNI 2025 will help support their important work.
+                We are proud to support The British Heart Foundation, an
+                organisation dedicated to having a world free from the fear of
+                heart and circulatory diseases. All proceeds raised from
+                ElevateNI 2025 will help support their important work.
               </p>
               <Link href="https://www.bhf.org.uk/">
-              <Button className="mt-6 bg-gradient-to-r from-[#40E0D0] to-[#9370DB] text-white hover:opacity-90 transition-opacity">
-                Learn More
-              </Button>
+                <Button className="mt-6 bg-gradient-to-r from-[#40E0D0] to-[#9370DB] text-white hover:opacity-90 transition-opacity">
+                  Learn More
+                </Button>
               </Link>
             </div>
           </div>
@@ -136,7 +147,7 @@ export default function Home() {
         <section id="raffle" className="py-24 relative bg-white/5">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold mb-12 bg-gradient-to-r from-[#40E0D0] to-[#9370DB] text-transparent bg-clip-text">
-             Charity Raffle
+              Charity Raffle
             </h2>
             <div className="flex flex-col items-center justify-center space-y-6">
               <p className="text-2xl font-semibold text-gray-300">
@@ -150,7 +161,7 @@ export default function Home() {
           <SpeakersCarousel />
         </section>
 
-        <section id='panels' className="py-24 relative bg-white/5">
+        <section id="panels" className="py-24 relative bg-white/5">
           <div className="container mx-auto px-4 max-w-5xl">
             <h2 className="text-3xl font-bold mb-12 text-center bg-gradient-to-r from-[#40E0D0] to-[#9370DB] text-transparent bg-clip-text">
               Previous Panels
@@ -158,18 +169,22 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
               <div className="w-full h-96 relative">
                 <Image
-                  src={'/images/disability_panel.png'}
-                  alt={'Disability and Inclusion Panel'}
+                  src="/images/disability_panel.png"
+                  alt="Disability and Inclusion Panel"
                   fill
+                  priority
                   style={{ objectFit: "contain" }}
+                  className="object-contain"
                 />
               </div>
               <div className="w-full h-96 relative">
                 <Image
-                  src={'/images/diversity_panel.png'}
-                  alt={'Diversity and Inclusion Panel'}
+                  src="/images/diversity_panel.png"
+                  alt="Diversity and Inclusion Panel"
                   fill
+                  priority
                   style={{ objectFit: "contain" }}
+                  className="object-contain"
                 />
               </div>
             </div>
