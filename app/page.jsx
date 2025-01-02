@@ -102,9 +102,14 @@ export default function Home() {
             </h2>
             <div className="flex flex-col items-center justify-center space-y-6">
               <Ticket className="w-24 h-24 text-[#9370DB]" />
-              <p className="text-2xl font-semibold text-gray-300">
-                Coming 6th January
+              <p className="text-gray-300 text-center max-w-2xl">
+              Want to network, learn, and grow both personally and professionally?
               </p>
+              <Link href="https://docs.google.com/forms/d/e/1FAIpQLSerHK_2W2n8f9L7HWaPsTDW0_7BWsO6aexofxalmTR2G_5GkQ/viewform">
+              <button className="px-6 py-3 bg-gradient-to-r from-[#40E0D0] to-[#9370DB] text-white font-semibold rounded-lg hover:opacity-90 transition-opacity">
+                Get Your Ticket
+              </button>
+            </Link>
             </div>
           </div>
         </section>
