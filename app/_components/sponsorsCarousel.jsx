@@ -55,6 +55,8 @@ export function SponsorsCarousel() {
                         alt={`${sponsor.name} logo`}
                         fill
                         style={{ objectFit: "contain" }}
+                        priority
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       />
                     </div>
                     <div className="p-6">
