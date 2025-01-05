@@ -114,8 +114,8 @@ export default function Home() {
               <p className="text-gray-300 text-center max-w-2xl">
               Want to network, learn, and grow both personally and professionally?
               </p>
-              <p className="text-gray-300 text-center max-w-2xl">Tickets only £5</p>
-              <p className="text-gray-300 text-center max-w-2xl">100% of Tickets proceeds go directly to charity</p>
+              <p className="text-gray-300 text-center max-w-2xl">100% of Ticket proceeds go directly to charity</p>
+              <p className="text-gray-300 text-center max-w-2xl">Tickets are only £5</p>
               <Link href="https://fixr.co/event/elevateni-student-conference-2025-tickets-627078385">
               <button className="px-6 py-3 bg-gradient-to-r from-[#40E0D0] to-[#9370DB] text-white font-semibold rounded-lg hover:opacity-90 transition-opacity">
                 Get Your Ticket
