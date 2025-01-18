@@ -13,8 +13,45 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "ElevateNI",
+  title: {
+    default: "ElevateNI",
+    template: "%s | ElevateNI",
+  },
   description: "ElevateNI Student Conference",
+  openGraph: {
+    title: "elevateNI.com",
+    description:
+      "ElevateNI Student Conference",
+    url: "https://elevateni.com",
+    siteName: "elevateni.com",
+    images: [
+      {
+        url: "/images/white_logo_2025.png",
+        width: 1526,
+        height: 476,
+      },
+    ],
+    locale: "en-GB",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  twitter: {
+    title: "ElevateNI",
+    card: "summary_large_image",
+  },
+  icons: {
+    shortcut: "/images/favicon.png",
+  },
 };
 
 export default function RootLayout({ children }) {
