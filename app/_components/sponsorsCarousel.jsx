@@ -14,7 +14,7 @@ export function SponsorsCarousel() {
   const sponsors = [
     {
       id: 1,
-      name: "LibertyIT",
+      name: "Liberty IT",
       logoURL: "/images/Lib.png",
     },
     {
