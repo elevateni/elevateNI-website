@@ -1,6 +1,6 @@
 "use client";
 
-import { CalendarDays, MapPin, Users, Ticket } from "lucide-react";
+import { CalendarDays, MapPin, Users, Ticket, Clock, Zap, Lightbulb, Network, Gift, PartyPopper } from "lucide-react";
 import { SponsorsCarousel } from "./_components/sponsorsCarousel";
 import Gallery from "./_components/gallery";
 import Link from "next/link";
@@ -81,24 +81,106 @@ export default function Home() {
         <section id="about" className="py-24 relative">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold mb-12 text-center bg-gradient-to-r from-[#40E0D0] to-[#9370DB] text-transparent bg-clip-text">
-              Event Details
+              Why Attend ElevateNI?
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="flex flex-col items-center text-center p-6 rounded-lg bg-white/5">
-                <CalendarDays className="w-12 h-12 mb-4 text-[#40E0D0]" />
-                <h3 className="text-xl font-semibold mb-2">Date</h3>
-                <p className="text-gray-300">March 6th, 2025</p>
+            <div className="max-w-4xl mx-auto">
+              <p className="text-xl text-gray-300 mb-8 text-center">
+                ElevateNI is more than just a conference - it is a platform to empower students to reach 
+                new heights. Here is what we have in store for ElevateNI 2025:
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="bg-black/30 p-6 rounded-lg">
+                  <h3 className="text-xl font-semibold mb-6 text-[#9370DB] text-center">Unforgettable Experiences</h3>
+                  <div className="space-y-4">
+                    <div className="flex items-start">
+                      <Zap className="w-6 h-6 mr-4 text-[#40E0D0] flex-shrink-0 mt-1" />
+                      <div>
+                        <h4 className="font-semibold text-white">Inspiring Main Track and Lightening Talks</h4>
+                        <p className="text-gray-300">Gain insights from Students, learn about their research, and passions.</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <Users className="w-6 h-6 mr-4 text-[#9370DB] flex-shrink-0 mt-1" />
+                      <div>
+                        <h4 className="font-semibold text-white">Inspiring Panels</h4>
+                        <p className="text-gray-300">Hear from inspiring students and industry professionals and their journeys with
+                          Disability and Inclusion, and Diversity and Inclusion.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <Network className="w-6 h-6 mr-4 text-[#40E0D0] flex-shrink-0 mt-1" />
+                      <div>
+                        <h4 className="font-semibold text-white">Interactive Workshops</h4>
+                        <p className="text-gray-300">Explore different societies, and what they have to offer through 
+                          fun and interactive workshops, spark your imagination and creativity.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <Gift className="w-6 h-6 mr-4 text-[#9370DB] flex-shrink-0 mt-1" />
+                      <div>
+                        <h4 className="font-semibold text-white">Charity Raffle</h4>
+                        <p className="text-gray-300">Lots of fantastic prizes up for grabs this year, 
+                          all while supporting a great cause!</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <PartyPopper className="w-6 h-6 mr-4 text-[#40E0D0] flex-shrink-0 mt-1" />
+                      <div>
+                        <h4 className="font-semibold text-white">After Party</h4>
+                        <p className="text-gray-300"> Connect with others, take part in quizzes, have fun, and win prizes.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-black/30 p-6 rounded-lg">
+                  <h3 className="text-xl font-semibold mb-6 text-[#9370DB] text-center">Event Details</h3>
+                  <div className="space-y-6">
+                    <div className="flex items-center">
+                      <CalendarDays className="w-8 h-8 mr-4 text-[#40E0D0]" />
+                      <div>
+                        <h4 className="font-semibold text-white">Date</h4>
+                        <p className="text-gray-300">March 6th, 2025</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center">
+                      <MapPin className="w-8 h-8 mr-4 text-[#9370DB]" />
+                      <div>
+                        <h4 className="font-semibold text-white">Location</h4>
+                        <p className="text-gray-300">Queen's Students' Union</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center">
+                      <Clock className="w-8 h-8 mr-4 text-[#40E0D0]" />
+                      <div>
+                        <h4 className="font-semibold text-white">Time</h4>
+                        <p className="text-gray-300">9:00 AM - 11:00 PM</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center">
+                      <Users className="w-8 h-8 mr-4 text-[#9370DB]" />
+                      <div>
+                        <h4 className="font-semibold text-white">Attendees</h4>
+                        <p className="text-gray-300">200+ Students</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="flex flex-col items-center text-center p-6 rounded-lg bg-white/5">
-                <MapPin className="w-12 h-12 mb-4 text-[#9370DB]" />
-                <h3 className="text-xl font-semibold mb-2">Location</h3>
-                <p className="text-gray-300">1 Elmwood Avenue, Belfast</p>
-                <p className="text-gray-300">Queen's Students' Union</p>
-              </div>
-              <div className="flex flex-col items-center text-center p-6 rounded-lg bg-white/5">
-                <Users className="w-12 h-12 mb-4 text-[#40E0D0]" />
-                <h3 className="text-xl font-semibold mb-2">Attendees</h3>
-                <p className="text-gray-300">200+ Students</p>
+              <div className="mt-12 text-center">
+                <p className="text-xl text-gray-300 mb-6">
+                  Don't miss this opportunity to be inspired, learn, and connect with Northern Ireland's vibrant
+                  student community!
+                </p>
+                <Link href="https://fixr.co/event/elevateni-student-conference-2025-tickets-627078385">
+                <Button
+                  size="lg"
+                  className="bg-gradient-to-r from-[#40E0D0] to-[#9370DB] text-white hover:opacity-90 transition-opacity"
+                >
+                  Secure Your Spot Now
+                </Button>
+            </Link>
               </div>
             </div>
           </div>
@@ -171,7 +253,7 @@ export default function Home() {
         <section id="panels" className="py-24 relative bg-white/5">
           <div className="container mx-auto px-4 max-w-5xl">
             <h2 className="text-3xl font-bold mb-12 text-center bg-gradient-to-r from-[#40E0D0] to-[#9370DB] text-transparent bg-clip-text">
-              Previous Panels
+              Panels
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
               <div className="w-full h-96 relative">
@@ -186,7 +268,7 @@ export default function Home() {
               </div>
               <div className="w-full h-96 relative">
                 <Image
-                  src="/images/diversity_panel.png"
+                  src="/images/diversity_panel.jpg"
                   alt="Diversity and Inclusion Panel"
                   fill
                   priority
