@@ -78,9 +78,6 @@ export function RaffleCarousel() {
   return (
     <section className="py-24 relative">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-12 text-center bg-gradient-to-r from-[#40E0D0] to-[#9370DB] text-transparent bg-clip-text">
-          Charity Raffle
-        </h2>
         <Carousel
           plugins={[plugin.current]}
           className="w-full max-w-5xl mx-auto"
