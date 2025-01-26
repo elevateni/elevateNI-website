@@ -78,7 +78,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-24 relative">
+        <section id="about" className="py-24 relative">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold mb-12 text-center bg-gradient-to-r from-[#40E0D0] to-[#9370DB] text-transparent bg-clip-text">
               Why Attend ElevateNI?
