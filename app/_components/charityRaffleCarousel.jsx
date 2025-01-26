@@ -14,53 +14,33 @@ export function RaffleCarousel() {
   const prizes = [
     {
       id: 1,
+      name: "EEECS Sponsoring Raffle",
+      imageURL: "/images/raffle/eeecs.png",
+    },
+    {
+      id: 1,
       name: "Quest 2",
-      imageURL: "/images/raffle/quest2.jpeg",
+      imageURL: "/images/raffle/quest.png",
     },
     {
       id: 2,
       name: "Lego Bonsai Tree",
-      imageURL: "/images/raffle/lego_bonsai_tree.jpg",
+      imageURL: "/images/raffle/lego.png",
     },
     {
       id: 3,
-      name: "Philips Water Filter",
-      imageURL: "/images/raffle/filter.webp",
+      name: "Switch Lite & Mario Bros",
+      imageURL: "/images/raffle/switch.png",
     },
     {
       id: 4,
-      name: "Firestick",
-      imageURL: "/images/raffle/firestick.jpeg",
+      name: "Portable Monitor",
+      imageURL: "/images/raffle/monitor.png",
     },
     {
       id: 5,
-      name: "Laptop Stand",
-      imageURL: "/images/raffle/stand.webp",
-    },
-    {
-      id: 6,
-      name: "Switch Lite & Mario Bros Deluxe",
-      imageURL: "/images/raffle/switch.jpeg",
-    },
-    {
-      id: 7,
-      name: "Headphones",
-      imageURL: "/images/raffle/headphones.webp",
-    },
-    {
-      id: 8,
-      name: "Lava Lamp",
-      imageURL: "/images/raffle/lavalamp.jpeg",
-    },
-    {
-      id: 9,
-      name: "Portable Monitor",
-      imageURL: "/images/raffle/monitor.webp",
-    },
-    {
-      id: 10,
       name: "Airpods 2nd Generation",
-      imageURL: "/images/raffle/airpods2.jpeg",
+      imageURL: "/images/raffle/airpods2.png",
     },
 
   ];
@@ -82,7 +62,7 @@ export function RaffleCarousel() {
               <CarouselItem key={prize.id} className="md:basis-1/3">
                 <div className="p-1">
                   <div className="bg-black/50 backdrop-blur-lg rounded-lg overflow-hidden border border-white/10">
-                    <div className="w-full h-48 relative">
+                    <div className="w-full h-64 relative">
                       <Image
                         src={prize.imageURL}
                         alt={`${prize.name}`}
@@ -91,11 +71,6 @@ export function RaffleCarousel() {
                         priority
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       />
-                    </div>
-                    <div className="p-6">
-                      <h3 className="text-xl font-semibold mb-2 text-center">
-                        {prize.name}
-                      </h3>
                     </div>
                   </div>
                 </div>
