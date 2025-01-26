@@ -241,7 +241,7 @@ export default function Home() {
             </h2>
             <div className="flex flex-col items-center justify-center space-y-6">
               <p className="text-2xl font-semibold text-gray-300">
-                You have the chance to win these amazing prizes!
+                Amazing prizes and support an amazing cause!
               </p>
               <p className="text-2xl font-semibold text-gray-300">
                 £1 for 1 ticket or £5 for 4 tickets!
