@@ -24,25 +24,24 @@ export function RaffleCarousel() {
     },
     {
       id: 3,
-      name: "Mario Bros Deluxe",
-      imageURL: "/images/raffle/mariobros.jpeg",
-    },
-    {
-      id: 4,
       name: "Philips Water Filter",
       imageURL: "/images/raffle/filter.webp",
     },
     {
-      id: 5,
+      id: 4,
       name: "Firestick",
       imageURL: "/images/raffle/firestick.jpeg",
     },
     {
-      id: 6,
+      id: 5,
       name: "Laptop Stand",
       imageURL: "/images/raffle/stand.webp",
     },
-    
+    {
+      id: 6,
+      name: "Switch Lite & Mario Bros Deluxe",
+      imageURL: "/images/raffle/switch.jpeg",
+    },
     {
       id: 7,
       name: "Headphones",
@@ -55,16 +54,11 @@ export function RaffleCarousel() {
     },
     {
       id: 9,
-      name: "Switch Lite",
-      imageURL: "/images/raffle/switchlite.jpeg",
-    },
-    {
-      id: 10,
       name: "Portable Monitor",
       imageURL: "/images/raffle/monitor.webp",
     },
     {
-      id: 11,
+      id: 10,
       name: "Airpods 2nd Generation",
       imageURL: "/images/raffle/airpods2.jpeg",
     },
