@@ -18,30 +18,41 @@ export function RaffleCarousel() {
       imageURL: "/images/raffle/eeecs.png",
     },
     {
-      id: 1,
+      id: 2,
       name: "Quest 2",
       imageURL: "/images/raffle/quest.png",
     },
     {
-      id: 2,
+      id: 3,
       name: "Lego Bonsai Tree",
       imageURL: "/images/raffle/lego.png",
     },
     {
-      id: 3,
+      id: 4,
       name: "Switch Lite & Mario Bros",
       imageURL: "/images/raffle/switch.png",
     },
     {
-      id: 4,
+      id: 5,
       name: "Portable Monitor",
       imageURL: "/images/raffle/monitor.png",
     },
     {
-      id: 5,
+      id: 6,
       name: "Airpods 2nd Generation",
       imageURL: "/images/raffle/airpods2.png",
     },
+    {
+      id: 7,
+      name: "Soundcore Headphones",
+      imageURL: "/images/raffle/Soundcore_headphones.png",
+    },
+    {
+      id: 8,
+      name: "Fire Stick 4k",
+      imageURL: "/images/raffle/fire.png",
+    },
+
 
   ];
 
