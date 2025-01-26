@@ -243,6 +243,9 @@ export default function Home() {
               <p className="text-2xl font-semibold text-gray-300">
                 You have the chance to win these amazing prizes!
               </p>
+              <p className="text-2xl font-semibold text-gray-300">
+                £1 for 1 ticket or £5 for 4 tickets!
+              </p>
             </div>
             <RaffleCarousel />
           </div>
