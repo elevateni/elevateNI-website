@@ -102,7 +102,7 @@ export default function Home() {
                     <div className="flex items-start">
                       <Users className="w-6 h-6 mr-4 text-[#9370DB] flex-shrink-0 mt-1" />
                       <div>
-                        <h4 className="font-semibold text-white">Interactive Panels</h4>
+                        <h4 className="font-semibold text-white">Inspiring Panels</h4>
                         <p className="text-gray-300">Hear from inspiring students and industry professionals and their journeys with
                           Disability and Inclusion, and Diversity and Inclusion.
                         </p>
