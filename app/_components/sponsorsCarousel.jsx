@@ -3,6 +3,7 @@
 import * as React from "react";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
+import Link from "next/link";
 
 import {
   Carousel,
@@ -70,6 +71,13 @@ export function SponsorsCarousel() {
             ))}
           </CarouselContent>
         </Carousel>
+        <div className="container mx-auto px-4 mt-10 text-center">
+            <Link href="https://forms.gle/eG8RhNZipUroGq9W9">
+                        <button className="px-6 py-3 bg-gradient-to-r from-[#40E0D0] to-[#9370DB] text-white font-semibold rounded-lg hover:opacity-90 transition-opacity">
+                          Interested in Sponsoring? Get in Touch
+                        </button>
+            </Link>
+          </div>
       </div>
     </section>
   );
