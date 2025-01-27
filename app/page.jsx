@@ -1,7 +1,8 @@
 "use client";
 
-import { CalendarDays, MapPin, Users, Ticket, Clock, Zap, Lightbulb, Network, Gift, PartyPopper } from "lucide-react";
+import { CalendarDays, MapPin, Users, Ticket, Clock, Zap, Network, Gift, PartyPopper } from "lucide-react";
 import { SponsorsCarousel } from "./_components/sponsorsCarousel";
+import { RaffleCarousel } from "./_components/charityRaffleCarousel"
 import Gallery from "./_components/gallery";
 import Link from "next/link";
 import { Navigation } from "./_components/navigation";
@@ -240,9 +241,13 @@ export default function Home() {
             </h2>
             <div className="flex flex-col items-center justify-center space-y-6">
               <p className="text-2xl font-semibold text-gray-300">
-                We have some exciting prizes to announce soon!
+                Amazing prizes and support an amazing cause!
+              </p>
+              <p className="text-2xl font-semibold text-gray-300">
+                £1 for 1 ticket or £5 for 4 tickets!
               </p>
             </div>
+            <RaffleCarousel />
           </div>
         </section>
 
