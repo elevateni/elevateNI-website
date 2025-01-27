@@ -15,9 +15,9 @@ export function SponsorsCarousel() {
   const sponsors = [
     {
       id: 1,
-      name: "Liberty IT",
-      logoURL: "/images/Lib.png",
-      tier: "Gold Sponsor"
+      name: "EY",
+      logoURL: "/images/EYLogo.png",
+      tier: "Diamond Sponsor"
     },
     {
       id: 2,
@@ -27,12 +27,18 @@ export function SponsorsCarousel() {
     },
     {
       id: 3,
-      name: "EY",
-      logoURL: "/images/EYLogo.png",
-      tier: "Diamond Sponsor"
+      name: "Liberty IT",
+      logoURL: "/images/Lib.png",
+      tier: "Gold Sponsor"
     },
     {
       id: 4,
+      name: "EEECS",
+      logoURL: "/images/EEECS.png",
+      tier: "Raffle Sponsor"
+    },
+    {
+      id: 5,
       name: "MacMac Media",
       logoURL: "/images/MacMacMedia.png",
       tier: "Media Sponsor"
