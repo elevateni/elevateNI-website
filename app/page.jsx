@@ -286,7 +286,7 @@ export default function Home() {
         </section>
 
         <section id="sponsors">
-          <SponsorsCarousel />
+        <SponsorsCarousel />
         </section>
 
         <section
