@@ -31,6 +31,18 @@ export function SponsorsCarousel() {
       logoURL: "/images/EYLogo.png",
       tier: "Diamond Sponsor"
     },
+    {
+      id: 4,
+      name: "MacMac Media",
+      logoURL: "/images/MacMacMedia.png",
+      tier: "Media Sponsor"
+    },
+    {
+      id: 5,
+      name: "EEECS",
+      logoURL: "/images/EECS.png",
+      tier: "Raffle Sponsor"
+    },
   ];
 
   const plugin = React.useRef(
