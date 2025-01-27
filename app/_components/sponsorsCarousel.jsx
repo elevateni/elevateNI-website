@@ -53,17 +53,17 @@ export function SponsorsCarousel() {
               <CarouselItem key={sponsor.id} className="md:basis-1/3">
                 <div className="p-1">
                   <div className="bg-black/50 backdrop-blur-lg rounded-lg overflow-hidden border border-white/10">
-                    <div className="w-full h-48 relative">
+                  <div className="w-full h-48 relative">
                       <Image
                         src={sponsor.logoURL}
                         alt={`${sponsor.name} logo`}
                         fill
-                        style={{ objectFit: "contain" }}
+                        style={{ objectFit: "contain", padding: "30px" }}
                         priority
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       />
                     </div>
-                    <div className="p-6">
+                    <div className="p-2">
                       <h3 className="text-xl font-semibold mb-2 text-center">
                         {sponsor.name}
                       </h3>
