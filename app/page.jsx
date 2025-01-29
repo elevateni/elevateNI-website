@@ -96,7 +96,7 @@ export default function Home() {
                     <div className="flex items-start">
                       <Zap className="w-6 h-6 mr-4 text-[#40E0D0] flex-shrink-0 mt-1" />
                       <div>
-                        <h4 className="font-semibold text-white">Inspiring Main Track and Lightening Talks</h4>
+                        <h4 className="font-semibold text-white">Inspiring Main Track and Lightning Talks</h4>
                         <p className="text-gray-300">Gain insights from Students, learn about their research, and passions.</p>
                       </div>
                     </div>
