@@ -86,7 +86,7 @@ export default function Home() {
             </h2>
             <div className="max-w-4xl mx-auto">
               <p className="text-xl text-gray-300 mb-8 text-center">
-                ElevateNI is more than just a conference - it is a platform to empower students to reach 
+                Everyone is welcome at ElevateNI, it is more than just a conference - it is a platform to empower students to reach 
                 new heights. Here is what we have in store for ElevateNI 2025:
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -97,7 +97,7 @@ export default function Home() {
                       <Zap className="w-6 h-6 mr-4 text-[#40E0D0] flex-shrink-0 mt-1" />
                       <div>
                         <h4 className="font-semibold text-white">Inspiring Main Track and Lightning Talks</h4>
-                        <p className="text-gray-300">Gain insights from Students, learn about their research, and passions.</p>
+                        <p className="text-gray-300">Gain insights from students, learn about their research, and passions.</p>
                       </div>
                     </div>
                     <div className="flex items-start">
@@ -163,7 +163,7 @@ export default function Home() {
                       <Users className="w-8 h-8 mr-4 text-[#9370DB]" />
                       <div>
                         <h4 className="font-semibold text-white">Attendees</h4>
-                        <p className="text-gray-300">200+ Students</p>
+                        <p className="text-gray-300">200+ Attendees</p>
                       </div>
                     </div>
                   </div>
