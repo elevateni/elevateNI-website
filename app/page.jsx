@@ -71,9 +71,9 @@ export default function Home() {
                 <span className="text-white">2025</span>
               </div>
             </div>
-            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSerHK_2W2n8f9L7HWaPsTDW0_7BWsO6aexofxalmTR2G_5GkQ/viewform">
+            <Link href="https://fixr.co/event/elevateni-student-conference-2025-tickets-627078385">
               <button className="px-6 py-3 bg-gradient-to-r from-[#40E0D0] to-[#9370DB] text-white font-semibold rounded-lg hover:opacity-90 transition-opacity">
-                Apply to be a Speaker
+                Buy Tickets
               </button>
             </Link>
           </div>
@@ -305,9 +305,9 @@ export default function Home() {
               Don't miss this opportunity to network, learn, and grow with
               Northern Ireland's student community.
             </p>
-            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSerHK_2W2n8f9L7HWaPsTDW0_7BWsO6aexofxalmTR2G_5GkQ/viewform">
+            <Link href="https://fixr.co/event/elevateni-student-conference-2025-tickets-627078385">
               <button className="px-6 py-3 bg-gradient-to-r from-[#40E0D0] to-[#9370DB] text-white font-semibold rounded-lg hover:opacity-90 transition-opacity">
-                Apply to be a Speaker
+                Buy Tickets
               </button>
             </Link>
           </div>
