@@ -6,7 +6,8 @@ import { RaffleCarousel } from "./_components/charityRaffleCarousel"
 import Gallery from "./_components/gallery";
 import Link from "next/link";
 import { Navigation } from "./_components/navigation";
-import { SpeakersCarousel } from "./_components/speakers";
+import { SpeakersCarousel } from "./_components/mainspeakers";
+import { LightningSpeakersCarousel } from "./_components/lightningspeakers"
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
@@ -251,8 +252,12 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="speakers">
+        <section id="main track speakers">
           <SpeakersCarousel />
+        </section>
+
+        <section id="lightning speakers">
+          <LightningSpeakersCarousel />
         </section>
 
         <section id="panels" className="py-24 relative bg-white/5">
@@ -261,16 +266,6 @@ export default function Home() {
               Panels
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
-              <div className="w-full h-96 relative">
-                <Image
-                  src="/images/disability_panel.png"
-                  alt="Disability and Inclusion Panel"
-                  fill
-                  priority
-                  style={{ objectFit: "contain" }}
-                  className="object-contain"
-                />
-              </div>
               <div className="w-full h-96 relative">
                 <Image
                   src="/images/diversity_panel.jpg"
