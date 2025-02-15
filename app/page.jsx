@@ -356,7 +356,7 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-12 text-center text-gray-400">
-            <p>&copy; 2025 ElevateNI Conference. All rights reserved.</p>
+            <p>&copy; 2025 ElevateNI Conference. All rights reserved. We are an event ran by QCS</p>
           </div>
         </div>
       </footer>
