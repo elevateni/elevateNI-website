@@ -16,19 +16,19 @@ export function SponsorsCarousel() {
     {
       id: 1,
       name: "EY",
-      logoURL: "/images/EYLogo.png",
+      logoURL: "/images/ey_sponsor.png",
       tier: "Diamond Sponsor"
     },
     {
       id: 2,
-      name: "MCS Group",
-      logoURL: "/images/MCS_Logo_Orange_White.png",
-      tier: "Platinum Sponsor"
+      name: "Liberty IT",
+      logoURL: "/images/Lib.png",
+      tier: "Gold Sponsor"
     },
     {
       id: 3,
-      name: "Liberty IT",
-      logoURL: "/images/Lib.png",
+      name: "Candor Security",
+      logoURL: "/images/candor-white.png",
       tier: "Gold Sponsor"
     },
     {
@@ -39,8 +39,8 @@ export function SponsorsCarousel() {
     },
     {
       id: 5,
-      name: "MacMac Media",
-      logoURL: "/images/MacMacMedia.png",
+      name: "Frank Dillon Photography",
+      logoURL: "/images/frank.png",
       tier: "Media Sponsor"
     },
   ];
