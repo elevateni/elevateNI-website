@@ -13,6 +13,7 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { ImageModal } from "./_components/imageModal";
 import { CountdownTimer } from "./_components/coundown";
+import { Workshops } from "./_components/workshops"
 
 export default function Home() {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -41,6 +42,20 @@ export default function Home() {
           <Navigation />
         </div>
       </header>
+
+      <section className="bg-gradient-to-r from-[#40E0D0] to-[#9370DB] py-3">
+          <div className="container mx-auto px-4">
+            <div className="flex items-center justify-center space-x-2 text-white">
+              <Gift className="h-5 w-5" />
+              <p className="text-sm font-medium">
+                Win a £50 Amazon voucher with your ELEVATENI 2025 ticket!{" "}
+                <a href="#giveaway" className="underline font-bold hover:text-black transition-colors">
+                  Learn more
+                </a>
+              </p>
+            </div>
+          </div>
+        </section>
 
       <div className="bg-gradient-to-r from-[#40E0D0]/20 to-[#9370DB]/20 py-4">
         <div className="container mx-auto px-4">
@@ -252,11 +267,11 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="main track speakers">
+        <section id="speakers">
           <SpeakersCarousel />
         </section>
 
-        <section id="lightning speakers">
+        <section>
           <LightningSpeakersCarousel />
         </section>
 
@@ -278,6 +293,10 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </section>
+
+        <section id="workshops" className="py-24 relative">
+         <Workshops />
         </section>
 
         <section id="sponsors">
@@ -304,6 +323,20 @@ export default function Home() {
               <button className="px-6 py-3 bg-gradient-to-r from-[#40E0D0] to-[#9370DB] text-white font-semibold rounded-lg hover:opacity-90 transition-opacity">
                 Buy Tickets
               </button>
+            </Link>
+          </div>
+        </section>
+        <section id="giveaway" className="py-24 relative bg-gradient-to-r from-[#40E0D0] to-[#9370DB]">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-3xl font-bold mb-8 text-white">Win a £50 Amazon Voucher!</h2>
+            <p className="text-xl mb-8 text-white max-w-2xl mx-auto">
+              Buying an ElevateNI ticket gives you a chance to win a £50 Amazon Voucher! 
+            </p>
+            <p className="text-lg font-semibold mb-4 text-white">Deadline to enter: Monday 24th February 2025</p>
+            <Link href="https://fixr.co/event/elevateni-student-conference-2025-tickets-627078385">
+              <Button size="lg" className="bg-white text-[#9370DB] hover:bg-gray-100 transition-colors">
+                Get Your Ticket Now
+              </Button>
             </Link>
           </div>
         </section>
@@ -356,7 +389,7 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-12 text-center text-gray-400">
-            <p>&copy; 2025 ElevateNI Conference. All rights reserved. We are an event ran by QCS</p>
+            <p>&copy; 2025 ElevateNI Conference. All rights reserved. We are an event ran by QCS A QUB SU Society</p>
           </div>
         </div>
       </footer>
