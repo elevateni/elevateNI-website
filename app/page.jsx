@@ -253,11 +253,11 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="main track speakers">
+        <section id="speakers">
           <SpeakersCarousel />
         </section>
 
-        <section id="lightning speakers">
+        <section>
           <LightningSpeakersCarousel />
         </section>
 
@@ -281,7 +281,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-24 relative">
+        <section id="workshops" className="py-24 relative">
          <Workshops />
         </section>
 
