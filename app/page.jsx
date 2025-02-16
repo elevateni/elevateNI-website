@@ -13,6 +13,7 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { ImageModal } from "./_components/imageModal";
 import { CountdownTimer } from "./_components/coundown";
+import { Workshops } from "./_components/workshops"
 
 export default function Home() {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -278,6 +279,10 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </section>
+
+        <section className="py-24 relative">
+         <Workshops />
         </section>
 
         <section id="sponsors">
