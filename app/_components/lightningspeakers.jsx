@@ -40,6 +40,10 @@ export function LightningSpeakersCarousel() {
       id: 7,
       imageURL: "/images/speakers/chloe.jpg",
     },
+    {
+      id: 8,
+      imageURL: "/images/speakers/sophie.jpg",
+    },
   ];
 
   const plugin = React.useRef(
