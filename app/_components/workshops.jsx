@@ -20,6 +20,14 @@ export function Workshops() {
         "Always wanted to learn chess but never knew where to start? This beginner friendly session will teach you the fundamentals. Equipment is provided.",
       duration: "30 minutes",
     },
+    {
+      id: 3,
+      title: "Water & Wonder: A journey in Watercolours",
+      imageURL: "/images/workshops/art.png",
+      description:
+        "Dive into the delicate beauty of watercolour painting. Whether you're a seasoned artist or a total beginner, join us for a night of creative exploration.",
+      duration: "1 hour",
+    },
   ];
 
   return (
