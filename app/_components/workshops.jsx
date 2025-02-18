@@ -12,6 +12,14 @@ export function Workshops() {
         "Ever wondered how computers store information? Discover the magic of binary code in a fun, hands-on workshop",
       duration: "30 minutes",
     },
+    {
+      id: 2,
+      title: "Chess for Complete Beginners",
+      imageURL: "/images/workshops/chess.png",
+      description:
+        "Always wanted to learn chess but never knew where to start? This beginner friendly session will teach you the fundamentals. Equipment is provided.",
+      duration: "30 minutes",
+    },
   ];
 
   return (
