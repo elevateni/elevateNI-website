@@ -28,6 +28,14 @@ export function Workshops() {
         "Dive into the delicate beauty of watercolour painting. Whether you're a seasoned artist or a total beginner, join us for a night of creative exploration.",
       duration: "1 hour",
     },
+    {
+      id: 4,
+      title: "Works in Progress",
+      imageURL: "/images/workshops/gamedev.png",
+      description:
+        "Ever wanted to test out games before they launch? This is your chance! Playtest student-created games, provide feedback, and help shape the future of game development",
+      duration: "1 hour",
+    },
   ];
 
   return (
