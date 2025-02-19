@@ -298,6 +298,16 @@ export default function Home() {
                   className="object-contain"
                 />
               </div>
+              <div className="w-full h-96 relative">
+                <Image
+                  src="/images/disability_panel.jpg"
+                  alt="Disability and Inclusion Panel"
+                  fill
+                  priority
+                  style={{ objectFit: "contain" }}
+                  className="object-contain"
+                />
+              </div>
             </div>
           </div>
         </section>
