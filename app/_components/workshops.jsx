@@ -34,7 +34,7 @@ export function Workshops() {
       imageURL: "/images/workshops/gamedev.png",
       description:
         "Ever wanted to test out games before they launch? This is your chance! Playtest student-created games, provide feedback, and help shape the future of game development",
-      duration: "1 hour",
+      duration: "30 minutes",
     },
   ];
 
