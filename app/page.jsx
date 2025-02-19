@@ -1,6 +1,6 @@
 "use client";
 
-import { CalendarDays, MapPin, Users, Ticket, Clock, Zap, Network, Gift, PartyPopper } from "lucide-react";
+import { CalendarDays, MapPin, Users, Ticket, Clock, Zap, Network, Gift, PartyPopper, Utensils } from "lucide-react";
 import { SponsorsCarousel } from "./_components/sponsorsCarousel";
 import { RaffleCarousel } from "./_components/charityRaffleCarousel"
 import Gallery from "./_components/gallery";
@@ -173,6 +173,13 @@ export default function Home() {
                       <div>
                         <h4 className="font-semibold text-white">Time</h4>
                         <p className="text-gray-300">9:00 AM - 11:00 PM</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center">
+                      <Utensils className="w-8 h-8 mr-4 text-[#9370DB]" />
+                      <div>
+                        <h4 className="font-semibold text-white">FREE FOOD!</h4>
+                        <p className="text-gray-300">Breakfast and Lunch Included!</p>
                       </div>
                     </div>
                     <div className="flex items-center">
