@@ -33,8 +33,32 @@ export function Workshops() {
       title: "Works in Progress",
       imageURL: "/images/workshops/gamedev.png",
       description:
-        "Ever wanted to test out games before they launch? This is your chance! Playtest student-created games, provide feedback, and help shape the future of game development",
+        "Ever wanted to test out games before they launch? This is your chance! Playtest student-created games, provide feedback, and help shape the future of game development.",
       duration: "30 minutes",
+    },
+    {
+      id: 5,
+      title: "Why Do Reproductive Rights Still Matter",
+      imageURL: "/images/workshops/projectchoice.png",
+      description:
+        "Join the workshop for an in-depth discussion on the evolving landscape of reproductive rights in Northern Ireland and beyond. Reflect, engage, and explore ways to make a real impact through activism.",
+      duration: "30 minutes",
+    },
+    {
+      id: 6,
+      title: "Snake in My Boots",
+      imageURL: "/images/workshops/snake.png",
+      description:
+        "Get ready for a wild showdown! Decorate your own fake snake and compete in teams to see who can toss the most snakes into a cowboy boot! A lighthearted, high-energy challenge for all country lovers.",
+      duration: "30 minutes",
+    },
+    {
+      id: 7,
+      title: "Wellbeing Exhibition",
+      imageURL: "/images/workshops/nightline.png",
+      description:
+        "Stop by to learn more about Nightlines vital support services, student wellbeing resources, and how you can get involved as a volunteer. Whether you are looking for a listening ear or want to make a difference, Nightline is here for you.",
+      duration: "2pm-5pm",
     },
   ];
 
