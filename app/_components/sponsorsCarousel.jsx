@@ -19,6 +19,12 @@ export function SponsorsCarousel() {
       logoURL: "/images/EY Logo.png",
       tier: "Diamond Sponsor"
     },
+    {
+      id: 2,
+      name: "Liberty IT",
+      logoURL: "/images/lib.png",
+      tier: "Gold Sponsor"
+    },
   ];
 
   const plugin = React.useRef(
