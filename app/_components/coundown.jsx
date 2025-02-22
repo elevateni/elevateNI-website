@@ -10,23 +10,20 @@ export function CountdownTimer() {
     minutes: 0,
     seconds: 0,
   });
-  const elevateDate = new Date("2025-03-06");
+
+  const elevateDate = new Date("2025-03-06T09:00:00");
 
   useEffect(() => {
     const timer = setInterval(() => {
       const currentDate = new Date();
       const difference = elevateDate.getTime() - currentDate.getTime();
 
-      const MS_IN_MINUTE = 60000;
-      const MS_IN_HOUR = 3600000;
-      const MS_IN_DAY = 86400000;
-
       if (difference > 0) {
         setTimeLeft({
-          days: Math.floor(difference / MS_IN_DAY),
-          hours: Math.floor((difference % MS_IN_DAY) / MS_IN_HOUR),
-          minutes: Math.floor((difference % MS_IN_HOUR) / MS_IN_MINUTE),
-          seconds: Math.floor((difference % MS_IN_MINUTE) / 1000),
+          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+          hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+          minutes: Math.floor((difference / (1000 * 60)) % 60),
+          seconds: Math.floor((difference / 1000) % 60),
         });
       } else {
         clearInterval(timer);
