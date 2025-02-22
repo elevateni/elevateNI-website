@@ -16,32 +16,8 @@ export function SponsorsCarousel() {
     {
       id: 1,
       name: "EY",
-      logoURL: "/images/EYLogo.png",
+      logoURL: "/images/EY Logo.png",
       tier: "Diamond Sponsor"
-    },
-    {
-      id: 2,
-      name: "MCS Group",
-      logoURL: "/images/MCS_Logo_Orange_White.png",
-      tier: "Platinum Sponsor"
-    },
-    {
-      id: 3,
-      name: "Liberty IT",
-      logoURL: "/images/Lib.png",
-      tier: "Gold Sponsor"
-    },
-    {
-      id: 4,
-      name: "EEECS",
-      logoURL: "/images/EEECS.png",
-      tier: "Raffle Sponsor"
-    },
-    {
-      id: 5,
-      name: "MacMac Media",
-      logoURL: "/images/MacMacMedia.png",
-      tier: "Media Sponsor"
     },
   ];
 
@@ -53,7 +29,7 @@ export function SponsorsCarousel() {
     <section className="py-24 relative">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-12 text-center bg-gradient-to-r from-[#40E0D0] to-[#9370DB] text-transparent bg-clip-text">
-          Previous Sponsors
+          Sponsors
         </h2>
         <Carousel
           plugins={[plugin.current]}
@@ -89,13 +65,6 @@ export function SponsorsCarousel() {
             ))}
           </CarouselContent>
         </Carousel>
-        <div className="container mx-auto px-4 mt-10 text-center">
-            <Link href="https://forms.gle/eG8RhNZipUroGq9W9">
-                        <button className="px-6 py-3 bg-gradient-to-r from-[#40E0D0] to-[#9370DB] text-white font-semibold rounded-lg hover:opacity-90 transition-opacity">
-                          Interested in Sponsoring? Get in Touch
-                        </button>
-            </Link>
-          </div>
       </div>
     </section>
   );
