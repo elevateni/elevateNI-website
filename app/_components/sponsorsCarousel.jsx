@@ -25,6 +25,12 @@ export function SponsorsCarousel() {
       logoURL: "/images/lib.png",
       tier: "Gold Sponsor"
     },
+    {
+      id: 3,
+      name: "EEECS",
+      logoURL: "/images/eeecs.png",
+      tier: "Raffle Sponsor"
+    },
   ];
 
   const plugin = React.useRef(
