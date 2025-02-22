@@ -391,12 +391,6 @@ export default function Home() {
                   Facebook
                 </a>
                 <a
-                  href="https://x.com/ElevateNI"
-                  className="text-gray-300 hover:text-[#40E0D0] transition-colors"
-                >
-                  Twitter
-                </a>
-                <a
                   href="https://discord.gg/bJamuXFbG3"
                   className="text-gray-300 hover:text-[#40E0D0] transition-colors"
                 >
