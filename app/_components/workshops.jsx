@@ -60,6 +60,14 @@ export function Workshops() {
         "Stop by to learn more about Nightlines vital support services, student wellbeing resources, and how you can get involved as a volunteer. Whether you are looking for a listening ear or want to make a difference, Nightline is here for you.",
       duration: "2pm-5pm",
     },
+    {
+      id: 7,
+      title: "Games Exhibition",
+      imageURL: "/images/workshops/slayers.png",
+      description:
+        "Dragonslayers will have a load of exciting activities set up at ElevateNI. They will be bringing a variety of board games and video games. There’s something for everyone! Join us for a fun-filled day.",
+      duration: "11am-4:45pm",
+    },
   ];
 
   return (
