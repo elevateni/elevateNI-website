@@ -33,6 +33,12 @@ export function SponsorsCarousel() {
     },
     {
       id: 4,
+      name: "Frank Dillon Photography",
+      logoURL: "/images/frank.png",
+      tier: "Media Sponsor"
+    },
+    {
+      id: 5,
       name: "EEECS",
       logoURL: "/images/eeecs.png",
       tier: "Raffle Sponsor"
