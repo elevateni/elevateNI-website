@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mobiscroll/cli": "^1.15.0",
+    "@mobiscroll/react": "npm:@mobiscroll/react-next-trial@^5.33.1",
     "@radix-ui/react-slot": "^1.1.1",
     "@shadcn/ui": "^0.0.4",
     "autoplay": "^0.0.4",
@@ -19,12 +21,12 @@
     "embla-carousel-react": "^8.5.1",
     "fs": "^0.0.1-security",
     "lucide-react": "^0.468.0",
+    "mobiscroll": "^3.0.0-beta6",
     "moment": "^2.30.1",
     "moment-timezone": "^0.5.47",
     "netlify-cli": "^17.38.1",
     "next": "^15.1.2",
     "react": "^19.0.0",
-    "react-big-calendar": "^1.17.1",
     "react-dom": "^19.0.0",
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7"
