@@ -212,6 +212,10 @@ export function Schedule() {
   }, []);
 
   return (
+    <section className="py-24 relative">
+        <h2 className="text-3xl font-bold mb-12 text-center bg-gradient-to-r from-[#40E0D0] to-[#9370DB] text-transparent bg-clip-text">
+          Schedule
+        </h2>
     <div style={{ height: '80vh', overflowY: 'auto' }}> 
     <Eventcalendar
     view={calView}
@@ -224,5 +228,6 @@ export function Schedule() {
     selectedDate={initialDate}
   />
   </div>
+  </section>
   );
 }
