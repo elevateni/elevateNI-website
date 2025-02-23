@@ -13,8 +13,7 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { ImageModal } from "./_components/imageModal";
 import { CountdownTimer } from "./_components/coundown";
-import { Workshops } from "./_components/workshops";
-import { Schedule } from "./_components/schedule";
+import { Workshops } from "./_components/workshops"
 
 export default function Home() {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -319,10 +318,6 @@ export default function Home() {
 
         <section id="sponsors">
         <SponsorsCarousel />
-        </section>
-
-        <section id="schedule">
-          <Schedule />
         </section>
 
         <section
