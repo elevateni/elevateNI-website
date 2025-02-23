@@ -27,6 +27,12 @@ export function SponsorsCarousel() {
     },
     {
       id: 3,
+      name: "Candor Security",
+      logoURL: "/images/candor-white.png",
+      tier: "Gold Sponsor"
+    },
+    {
+      id: 4,
       name: "EEECS",
       logoURL: "/images/eeecs.png",
       tier: "Raffle Sponsor"
