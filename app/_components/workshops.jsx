@@ -61,7 +61,7 @@ export function Workshops() {
       duration: "2pm-5pm",
     },
     {
-      id: 7,
+      id: 8,
       title: "Games Exhibition",
       imageURL: "/images/workshops/slayers.png",
       description:
