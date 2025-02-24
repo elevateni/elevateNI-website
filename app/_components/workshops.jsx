@@ -53,6 +53,14 @@ export function Workshops() {
       duration: "30 minutes",
     },
     {
+      id: 20,
+      title: "Vision Boards Kickstarting your Journey",
+      imageURL: "/images/workshops/womeninstem.png",
+      description:
+        "Join the Women in STEM Society to create vision boards, build confidence, and set actionable goals to navigate your academic journey. Whether you're just starting out or planning your next steps, this workshop will help you stay motivated and focused on your future.",
+      duration: "30 minutes",
+    },
+    {
       id: 7,
       title: "Wellbeing Exhibition",
       imageURL: "/images/workshops/nightline.png",
