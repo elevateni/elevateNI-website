@@ -347,7 +347,7 @@ export default function Home() {
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold mb-8 text-white">Win a £50 Amazon Voucher!</h2>
             <p className="text-xl mb-8 text-white max-w-2xl mx-auto">
-              Buying an ElevateNI ticket gives you a chance to win a £50 Amazon Voucher! Sponsored by Liberty IT 
+              Buying an ElevateNI ticket gives you a chance to win a £50 Amazon Voucher! 
             </p>
             <p className="text-lg font-semibold mb-4 text-white">Deadline to enter: Monday 24th February 2025</p>
             <Link href="https://fixr.co/event/elevateni-student-conference-2025-tickets-627078385">
