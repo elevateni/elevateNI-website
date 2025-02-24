@@ -267,7 +267,7 @@ export default function Home() {
                 Amazing prizes and support an amazing cause!
               </p>
               <p className="text-2xl font-semibold text-gray-300">
-                £1 for 1 ticket or £5 for 4 tickets!
+                £1 for 1 ticket or £4 for 5 tickets!
               </p>
             </div>
             <RaffleCarousel />
