@@ -176,7 +176,7 @@ export function Schedule() {
       schedule: {
         type: 'day',  
         startTime: '09:00',
-        endTime: '22:00',
+        endTime: '21:00',
         timeCellStep: 30,
         currentTimeIndicator: true,
       },
