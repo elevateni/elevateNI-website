@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Menu } from 'lucide-react'
 
 export function Navigation() {
-  const navItems = ['about', 'tickets', 'charity', 'raffle', 'speakers', 'panels', 'workshops', 'sponsors', 'gallery']
+  const navItems = ['about', 'tickets', 'charity', 'raffle', 'speakers', 'panels', 'workshops', 'sponsors', 'schedule', 'gallery']
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const menuRef = useRef(null);
 

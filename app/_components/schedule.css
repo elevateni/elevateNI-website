@@ -1,0 +1,32 @@
+.mbsc-schedule-column {
+  width: 300px !important; 
+}
+
+.mbsc-schedule-time-wrapper,
+.mbsc-schedule-item {
+  height: 50px;
+}
+
+.mbsc-schedule-cell {
+  overflow-x: auto; 
+}
+
+.mbsc-schedule-resource {
+  width: 300px !important; 
+}
+
+.mbsc-schedule-header {
+  background-color: black !important;  
+  color: white !important; 
+  font-size: 18px !important; 
+  padding: 10px !important;  
+  border-bottom: 2px solid #ac2bff !important;
+}
+
+.mbsc-calendar-controls {
+  background-color: black !important;
+}
+
+.mbsc-schedule-header-wrapper {
+  background-color: black !important;
+}
