@@ -20,6 +20,12 @@ export function SponsorsCarousel() {
       tier: "Diamond Sponsor"
     },
     {
+      id: 33,
+      name: "Allstate",
+      logoURL: "/images/allstate.png",
+      tier: "Platinum Sponsor"
+    },
+    {
       id: 2,
       name: "Liberty IT",
       logoURL: "/images/lib.png",
