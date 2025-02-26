@@ -1,0 +1,12 @@
+.mbsc-schedule-column {
+  width: 300px !important; 
+}
+
+.mbsc-schedule-cell {
+  overflow-x: auto; 
+}
+
+.mbsc-schedule-resource {
+  width: 300px !important; 
+}
+  
