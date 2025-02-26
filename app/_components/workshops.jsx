@@ -53,12 +53,28 @@ export function Workshops() {
       duration: "30 minutes",
     },
     {
+      id: 20,
+      title: "Vision Boards Kickstarting your Journey",
+      imageURL: "/images/workshops/womeninstem.png",
+      description:
+        "Join the Women in STEM Society to create vision boards, build confidence, and set actionable goals to navigate your academic journey. Whether you're just starting out or planning your next steps, this workshop will help you stay motivated and focused on your future.",
+      duration: "30 minutes",
+    },
+    {
       id: 7,
       title: "Wellbeing Exhibition",
       imageURL: "/images/workshops/nightline.png",
       description:
         "Stop by to learn more about Nightlines vital support services, student wellbeing resources, and how you can get involved as a volunteer. Whether you are looking for a listening ear or want to make a difference, Nightline is here for you.",
       duration: "2pm-5pm",
+    },
+    {
+      id: 8,
+      title: "Games Exhibition",
+      imageURL: "/images/workshops/slayers.png",
+      description:
+        "Dragonslayers will have a load of exciting activities set up at ElevateNI. They will be bringing a variety of board games and video games. There’s something for everyone! Join us for a fun-filled day.",
+      duration: "11am-4:45pm",
     },
   ];
 
