@@ -28,7 +28,7 @@ const events = [
     start: `${initialDate}T11:00:00.000+01:00`,
     end: `${initialDate}T11:30:00.000+01:00`,
     title: 'Michael Loughran AI Supervision in Drug Dispensing',
-    resource: 20,
+    resource: 1,
   },
   {
     start: `${initialDate}T11:00:00.000+01:00`,
