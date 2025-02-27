@@ -51,7 +51,7 @@ const events = [
   {
     start: `${initialDate}T13:00:00.000+01:00`,
     end: `${initialDate}T13:30:00.000+01:00`,
-    title:"'Megan D'Arcy & Saffron Baker Beyond Big Brother: The Corporate Takeover",
+    title:"Megan D'Arcy & Saffron Baker Beyond Big Brother: The Corporate Takeover",
     resource: 1,
   },
   {
@@ -213,7 +213,7 @@ export function Schedule() {
       },
       {
         id: 4,
-        name: 'Sunset Room',
+        name: 'Drawing Room',
         color: '#FFA07A', 
       },
     ],
