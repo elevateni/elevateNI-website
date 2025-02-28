@@ -61,6 +61,14 @@ export function Workshops() {
       duration: "30 minutes",
     },
     {
+      id: 21,
+      title: "Running and Form",
+      imageURL: "/images/workshops/legs.jpg",
+      description:
+        "Want to start running but don’t know where to begin? Learn the best techniques to build endurance and prevent injuries with proper stretching. Whether you're a beginner or looking to improve, this session will help you hit the ground running.",
+      duration: "30 minutes",
+    },
+    {
       id: 7,
       title: "Wellbeing Exhibition",
       imageURL: "/images/workshops/nightline.png",
