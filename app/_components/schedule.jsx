@@ -47,7 +47,7 @@ const events = [
     end: `${initialDate}T11:30:00.000+01:00`,
     title: "Michael Loughran AI Supervision in Drug Dispensing",
     resource: 1,
-    image: "/images/schedule/michael.jpeg",
+    image: "/images/schedule/michael.JPG",
     name: "Michael Loughran",
     description:
       "Learn how computer vision and other image processing techniques can be used to alert people when errors occur, with a specific focus on applications in pharmacy particularly in drug dispensing. This session will explore the cutting-edge technologies that can enhance accuracy and safety in various industries",
@@ -73,7 +73,7 @@ const events = [
   {
     start: `${initialDate}T11:45:00.000+01:00`,
     end: `${initialDate}T12:15:00.000+01:00`,
-    image: "/images/schedule/yuan.jpeg",
+    image: "/images/schedule/Yuanz.JPG",
     title:
       "Yuan Zhang From Classroom to Conference Stage How Extracurricular Can Launch Your Tech Career",
     resource: 1,
@@ -108,7 +108,7 @@ const events = [
     title:
       "Matthew Taylor What We Get Wrong About Mental Health: As a former Inpatient at a Psych Ward",
     resource: 1,
-    image: "/images/schedule/matthew.jpeg",
+    image: "/images/schedule/matthew.jpg",
     name: "Matthew Taylor",
     description:
       "Matthew will be delivering a talk based on his TEDxStormont talk on what we get wrong with suicide as a former inpatient of a psychiatric ward" +
@@ -120,7 +120,7 @@ const events = [
     title:
       "Anna McDermott Playground Curiosity Philosophy As a Tool for Children",
     resource: 1,
-    image: "/images/schedule/anna.jpeg",
+    image: "/images/schedule/annag.jpg",
     description:
       "Anna will be exploring the profound impact of integrating Philosophy for Children (P4C) into education" +
       "Philosophy is often misunderstood as abstract or impractical, but this session will dismantle those misconceptions and showcase how P4C fosters curiosity, dialogue, and empowerment in classrooms.",
@@ -128,7 +128,7 @@ const events = [
   {
     start: `${initialDate}T15:30:00.000+01:00`,
     end: `${initialDate}T16:00:00.000+01:00`,
-    image: "/images/schedule/celine2.jpeg",
+    image: "/images/schedule/celine.jpeg",
     title: "Celine Ostermeyer Women Shaping the Future of Tech",
     resource: 1,
     description:
@@ -140,7 +140,7 @@ const events = [
     title:
       "Alexander Baine Study Smarter Not Harder: The AI Toolkit for Students",
     resource: 1,
-    image: "/images/schedule/bane.jpeg",
+    image: "/images/schedule/bainer.jpg",
     description:
       "In this fun and practical session, Alexander will show how AI tools, from ChatGPT to NotebookLM, can be your ultimate study sidekick. He will address common concerns about AI in academia and demonstrate how it can help you study smarter, not harder. This session is perfect for anyone looking to level up their study game!",
   },
@@ -364,40 +364,66 @@ export function Schedule() {
 
     return formattedTime;
 };
-  return (
-    <section className="py-24 relative">
-      <h2 className="text-3xl font-bold mb-12 text-center bg-gradient-to-r from-[#40E0D0] to-[#9370DB] text-transparent bg-clip-text">
-        Schedule
-      </h2>
-      <div className={styles["schedule-container"]}>
-        <Eventcalendar
-          view={calView}
-          data={myEvents}
-          resources={myResources}
-          renderHeader={() => <div></div>}
-          selectedDate={initialDate}
-          onEventClick={handleEventClick}
-        />
-      </div>
-      {isOpen && selectedEvent && (
-        <Modal isOpen={isOpen} onClose={onClose}>
-          <ModalOverlay />
-          <ModalContent className="max-h-[80vh] sm:max-h-[70vh] md:max-h-[60vh] lg:max-h-[70vh] xl:max-h-[70vh] overflow-y-auto">
-            <ModalHeader>{selectedEvent.title}</ModalHeader>
-            <ModalCloseButton />
-            <ModalBody>
-              <p>
-                Thursday {formatEventTime(new Date(selectedEvent.start))} -{" "}
-                {formatEventTime(new Date(selectedEvent.end))} <br></br>
-                {myResources.find((r) => r.id === selectedEvent.resource)
-                  ?.name || "N/A"}
-              </p>
-              <div className="flex justify-center space-x-4 mb-4">
-                {selectedEvent.image && (
-                  <div className="w-32 h-30 rounded-full overflow-hidden mb-4">
+return (
+  <section className="py-24 relative">
+    <h2 className="text-3xl font-bold mb-12 text-center bg-gradient-to-r from-[#40E0D0] to-[#9370DB] text-transparent bg-clip-text">
+      Schedule
+    </h2>
+    <div className={styles["schedule-container"]}>
+      <Eventcalendar
+        view={calView}
+        data={myEvents}
+        resources={myResources}
+        renderHeader={() => <div></div>}
+        selectedDate={initialDate}
+        onEventClick={handleEventClick}
+      />
+    </div>
+    {isOpen && selectedEvent && (
+      <Modal isOpen={isOpen} onClose={onClose}>
+        <ModalOverlay />
+        <ModalContent className="max-h-[80vh] sm:max-h-[70vh] md:max-h-[60vh] lg:max-h-[70vh] xl:max-h-[70vh] overflow-y-auto">
+          <ModalHeader>{selectedEvent.title}</ModalHeader>
+          <ModalCloseButton />
+          <ModalBody>
+            <p>
+              Thursday {formatEventTime(new Date(selectedEvent.start))} -{" "}
+              {formatEventTime(new Date(selectedEvent.end))} <br />
+              {myResources.find((r) => r.id === selectedEvent.resource)?.name || "N/A"}
+            </p>
+            <div className="flex justify-center space-x-4 mb-4">
+              {[
+                { src: selectedEvent.image, alt: selectedEvent.title },
+                { src: selectedEvent.image2, alt: selectedEvent.title },
+                { src: selectedEvent.logo, alt: "Society Workshop", className: "w-52 h-52 relative", contain: true },
+                { src: selectedEvent.panel, alt: "Panel", className: "w-72 h-72 relative", contain: true },
+              ]
+                .filter((img) => img.src)
+                .map((img, index) => (
+                  <div key={index} className={img.className || "w-32 h-32 rounded-full overflow-hidden mb-4"}>
                     <Image
-                      src={selectedEvent.image}
-                      alt={`${selectedEvent.name}`}
+                      src={img.src}
+                      alt={img.alt}
+                      width={img.className ? undefined : 128}
+                      height={img.className ? undefined : 128}
+                      fill={!!img.className}
+                      style={{ objectFit: img.contain ? "contain" : "cover", objectPosition: "center" }}
+                      priority
+                      sizes={img.className ? "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" : undefined}
+                    />
+                  </div>
+                ))}
+            </div>
+
+            <p>{selectedEvent.prizes}</p>
+            <p className="mb-2">{selectedEvent.description}</p>
+            {selectedEvent.raffleImages?.length > 0 && (
+              <div className="flex flex-wrap space-x-1 mb-4">
+                {selectedEvent.raffleImages.map((imgUrl, index) => (
+                  <div key={index} className="w-30 h-30 rounded-full overflow-hidden mb-4">
+                    <Image
+                      src={imgUrl}
+                      alt={`Event Image ${index + 1}`}
                       width={128}
                       height={128}
                       objectFit="cover"
@@ -405,78 +431,16 @@ export function Schedule() {
                       priority
                     />
                   </div>
-                )}
-                {selectedEvent.image2 && (
-                  <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
-                    <Image
-                      src={selectedEvent.image2}
-                      alt={`${selectedEvent.name2}`}
-                      width={128}
-                      height={128}
-                      objectFit="cover"
-                      objectPosition="center"
-                      priority
-                    />
-                  </div>
-                )}
-                {selectedEvent.logo && (
-                  <div className="w-52 h-52 relative">
-                    <Image
-                      src={selectedEvent.logo}
-                      alt={`${"Society Workshop"}`}
-                      fill
-                      style={{ objectFit: "contain" }}
-                      priority
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    />
-                  </div>
-                )}
-                {selectedEvent.panel && (
-                  <div className="w-72 h-72 relative">
-                    <Image
-                      src={selectedEvent.panel}
-                      alt="Panel"
-                      fill
-                      style={{ objectFit: "contain" }}
-                      priority
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    />
-                  </div>
-                )}
+                ))}
               </div>
-              <p>{selectedEvent.prizes}</p>
-              <p className="mb-2">{selectedEvent.description}</p>
-              {selectedEvent.raffleImages &&
-                selectedEvent.raffleImages.length > 0 && (
-                  <div className="flex flex-wrap space-x-1 mb-4">
-                    {selectedEvent.raffleImages.map((imgUrl, index) => (
-                      <div
-                        key={index}
-                        className="w-32 h-32 rounded-full overflow-hidden mb-4"
-                      >
-                        <Image
-                          src={imgUrl}
-                          alt={`Event Image ${index + 1}`}
-                          width={128}
-                          height={128}
-                          objectFit="cover"
-                          objectPosition="center"
-                          priority
-                        />
-                      </div>
-                    ))}
-                  </div>
-                )}
-            </ModalBody>
-            <ModalFooter>
-              <p>
-                All Funds Raise from ElevateNI will go to the British Heart
-                Foundation
-              </p>
-            </ModalFooter>
-          </ModalContent>
-        </Modal>
-      )}
-    </section>
-  );
+            )}
+          </ModalBody>
+          <ModalFooter>
+            <p>All Funds Raised from ElevateNI will go to the British Heart Foundation</p>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
+    )}
+  </section>
+);
 }
