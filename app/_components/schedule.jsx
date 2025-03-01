@@ -350,17 +350,20 @@ export function Schedule() {
   }, []);
 
   const formatEventTime = (date) => {
-    const hours = date.getHours();
-    const minutes = date.getMinutes();
+    const eventDate = new Date(date);
 
-    const formattedHours = hours % 12 || 12;
-    const formattedMinutes = minutes < 10 ? minutes : minutes;
+    const options = {
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: true,
+        timeZone: 'Europe/Amsterdam',
+    };
 
-    return `${formattedHours}:${
-      formattedMinutes < 10 ? `0${formattedMinutes}` : minutes
-    } ${hours >= 12 ? "PM" : "AM"}`;
-  };
+    let formattedTime = new Intl.DateTimeFormat('en-US', options).format(eventDate);
+    formattedTime = formattedTime.replace(/^0(\d)/, '$1');
 
+    return formattedTime;
+};
   return (
     <section className="py-24 relative">
       <h2 className="text-3xl font-bold mb-12 text-center bg-gradient-to-r from-[#40E0D0] to-[#9370DB] text-transparent bg-clip-text">
