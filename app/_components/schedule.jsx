@@ -289,7 +289,8 @@ const events = [
     resource: 1,
     description:
       "To close out ElevateNI 2025, we're throwing an unforgettable After Party that you won't want to miss! \n\n" +
-      "Get ready for an exciting quiz where you can win incredible prizes! Grab your friends, bring your A-game, and compete in our exclusive quiz while celebrating the end of an amazing event!",
+      "The stakes are high with our Big Afterparty Quiz as there are some incredible prizes up for grabs!!" +
+      " Throughout the afterparty the bar in the Mandela Hall will also be open."
   },
 ];
 
