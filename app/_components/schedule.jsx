@@ -258,7 +258,7 @@ const events = [
   },
   {
     start: `${initialDate}T12:15:00.000+01:00`,
-    end: `${initialDate}T13:00:00.000+01:00`,
+    end: `${initialDate}T12:45:00.000+01:00`,
     title: "Lunch",
     resource: 1,
     description:
